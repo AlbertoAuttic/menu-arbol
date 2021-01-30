@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ReactComponent as HomeIcon} from './icons/home.svg';
 
-function App() {
+const App = () =>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <NavBar>
+      <NavItem icon={<HomeIcon />}/>
+    </NavBar>
   );
-}
+};
+
+
+const NavBar = (props) => {
+  return (
+    <nav className="navbar">
+      <ul className="navbar-nav">{props.children}</ul>
+    </nav>
+  );
+};
+
+const NavItem = (props) => {
+  return (
+    <li className="nav-item">
+      <a href="#" className="icon-button">
+        {props.icon}
+      </a>
+    </li>
+  );
+};
 
 export default App;
