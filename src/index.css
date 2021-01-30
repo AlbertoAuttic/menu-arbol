@@ -65,6 +65,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: filter 300ms;
   
 }
 
@@ -76,4 +77,33 @@ a {
   fill: var(--text-colour);
   width: 20px;
   height: 20px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 58px;
+  width: 300px;
+  transform: translateX(-45%);
+  background-color: var(--background);
+  border: var(--border);
+  border: var(--border-radius);
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.menu-item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  transition: background var(--speed);
+  padding: 0.5rem;
+}
+
+.menu-item:hover {
+  background-color: #525357;
+}
+
+.icon-right {
+  margin-left: auto;
 }
