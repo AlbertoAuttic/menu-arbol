@@ -33,6 +33,10 @@ a {
   text-decoration: none;
 }
 
+a.menu-item > p {
+  padding-left: 5px;
+}
+
 .navbar {
   height: var(--nav-size);
   background-color: var(--background);
@@ -75,9 +79,10 @@ a {
 
 .icon-button svg {
   fill: var(--text-colour);
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
 }
+
 
 .dropdown {
   position: absolute;
@@ -89,6 +94,8 @@ a {
   border: var(--border-radius);
   padding: 1rem;
   overflow: hidden;
+  
+  transition: height var(--speed) ease;
 }
 
 .menu-item {
@@ -104,6 +111,59 @@ a {
   background-color: #525357;
 }
 
+
 .icon-right {
   margin-left: auto;
 }
+
+.icon-right svg {
+  fill: var(--text-colour);
+  width: 18px;
+  height: 18px;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu-primary-enter {
+  position: absolute;
+  transform: translateX(-110%);
+}
+
+.menu-primary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+
+}
+
+.menu-primary-exit {
+  position: absolute;
+
+}
+
+.menu-primary-exit-active {
+  transform: translateX(-110%);
+  transition: all var(--speed) ease;
+
+}
+.menu-secondary-enter {
+  transform: translateX(110%);
+}
+
+.menu-secondary-enter-active {
+  transform: translateX(0%);
+  transition: all var(--speed) ease;
+
+}
+
+.menu-secondary-exit {
+
+}
+
+.menu-secondary-exit-active {
+  transform: translateX(110%);
+  transition: all var(--speed) ease;
+
+}
+
