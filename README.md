@@ -7,7 +7,7 @@ Creación de menú en árbol con React y react-treebeard.
 
 ## Screenshot
 
-![App Screenshot]("./Captura.png")
+<img src="Captura.png">
 
 
 ## Ejecutar en desarrollo
