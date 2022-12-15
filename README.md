@@ -1,14 +1,38 @@
-# Dropdown Nav with React
 
-Inpired from Facebook's navbar and Fireship's youtube video.
+# Menú en Árbol
 
-```shell
-git clone https://github.com/Ian-syah/belajar-react-dropdown-nav.git && 
-cd belajar-react-dropdown-nav
+Creación de menú en árbol con React y react-treebeard.
+
+
+
+## Screenshot
+
+![App Screenshot]("./Captura.png")
+
+
+## Ejecutar en desarrollo
+
+Clona el repositório
+
+```bash
+  git clone https://github.com/AlbertoAuttic/menu-arbol.git
 ```
 
-Make sure you already install node.js
+Go to the project directory
 
-```shell
-npm i && npm start
+```bash
+  cd my-project
 ```
+
+Instalar dependencias
+
+```bash
+  npm install
+```
+
+Iniciar servidor
+
+```bash
+  npm run start
+```
+
